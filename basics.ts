@@ -23,6 +23,10 @@ person = {
   age: 32,
 }
 
-//type inference 
-let course = 'React Complete Guide';
-course = 123456; //error TS will immediately assume a type based on the value
+// //type inference 
+// let course = 'React Complete Guide';
+// course = 123456; //error TS will immediately assume a type based on the value
+
+//union types
+let course: string | number = 'React Complete Guide';
+course = 123456; //no error because multiple types was declared
