@@ -16,9 +16,13 @@ hobbies: ['sports','cooking']; //here a number would threw an error
 let person: { // no type implies any typ
   name: string;
   age: number;
-} ; //this is however how an object type is correctly defined 
+}; //this is however how an object type is correctly defined 
 
 person = {
   name: 'Max',
   age: 32,
 }
+
+//type inference 
+let course = 'React Complete Guide';
+course = 123456; //error TS will immediately assume a type based on the value
