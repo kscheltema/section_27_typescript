@@ -35,3 +35,13 @@ person = {
 let course: string | number = 'React Complete Guide';
 course = 123456; //no error because multiple types was declared
 
+//functions and types
+function add (a: number, b: number):number | string { //can also set it here 
+  //not best practice however - see union types
+  return a+b; //implied return value is number
+}
+
+function print(value: any) {
+  console.log(value); //special return value assigned - void aka no return
+}
+
