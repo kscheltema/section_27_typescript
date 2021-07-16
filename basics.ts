@@ -13,10 +13,14 @@ isInstructor = true;
 let hobbies: string[]; //an array of strings
 hobbies: ['sports','cooking']; //here a number would threw an error
 
-let person: { // no type implies any typ
+//type alias
+//complex types defined for use in variables
+type Person = { //type definition with - type alias
   name: string;
   age: number;
-}; //this is however how an object type is correctly defined 
+};
+
+let person: Person; //the alias is defined once and can then be repeated multiple times
 
 person = {
   name: 'Max',
@@ -30,3 +34,4 @@ person = {
 //union types
 let course: string | number = 'React Complete Guide';
 course = 123456; //no error because multiple types was declared
+
